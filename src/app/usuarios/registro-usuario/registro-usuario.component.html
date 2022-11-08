@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registrate</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Nombre</ion-label>
+          <ion-input placeholder="Ingrese su Nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Apellido</ion-label>
+          <ion-input placeholder="Ingrese su Apellido"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Edad</ion-label>
+          <ion-input placeholder="Ingrese su Edad"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input placeholder="Ingrese su Username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Contraseña</ion-label>
+          <ion-input placeholder="Ingrese su contraseña" type="password"></ion-input>
+        </ion-item>
+
+        <ion-label position="fixed"> Ingresa tu fecha de nacimiento </ion-label>
+        <ion-datetime></ion-datetime>
+
+        <ion-label>Ingresa tu genero</ion-label>
+        <ion-radio-group value="MAsculino">
+          <ion-item>
+            <ion-label>Masculino</ion-label>
+            <ion-radio slot="end" value="Masculino"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Femenino</ion-label>
+            <ion-radio slot="end" value="Femenino"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
+
+      </ion-list>
+    </ion-card-content>
+  <ion-button>Registrate</ion-button>
+  <ion-button fill="clear" [routerLink]="['/usuarios/iniciar-sesion']">¿Ya tienes cuenta? vuelve a iniciar sesión</ion-button>
+  </ion-card>
+
+
+</ion-content>

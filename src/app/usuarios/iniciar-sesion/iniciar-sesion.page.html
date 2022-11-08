@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>iniciarSesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Inicia sesión</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input placeholder="Ingrese su username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Contraseña</ion-label>
+          <ion-input placeholder="Ingrese su contraseña" type="password"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  <ion-button>Iniciar sesión</ion-button>
+  <ion-button fill="clear" [routerLink]="['/usuarios/registro-usuario']">¿No tienes cuenta? Registrate</ion-button>
+  </ion-card>
+
+
+</ion-content>
